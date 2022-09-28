@@ -1,0 +1,702 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+  
+  html{
+      scroll-behavior: smooth;
+  }
+  body{
+      font-family: "Poppins",sans-serif;
+      line-height: 1.5;
+      user-select: none;
+  }
+  /*styling the nav bar*/
+  nav{
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    background:#c9c9d0c4;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    box-shadow: 6px -2px 20px 0px rgba(17, 17, 26, 0.52);
+  }
+  nav .logo img{
+    width: 28%;
+  }
+  nav ul{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    padding-left: 350px;
+ }
+ nav ul li a{
+    color: #000;
+    font-size: 13px;
+    text-decoration: none;
+}
+nav ul li a:hover{
+  color: #4E9F3D;
+  border-bottom: #4E9F3D solid 1px;
+}
+nav ul li .active{
+  color: #4E9F3D;
+  border-bottom: #4E9F3D solid 1px;
+}
+nav ul li .material-symbols-sharp{
+  font-size: 18px;
+  transform: translateY(20%);
+}
+.close-btn{
+  display: none;
+}
+/*styling the header setion */
+
+#header{
+  height: fit-content;
+  transform: translateY(-7%);
+  background:#c9c9d0c4;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#header .left{
+  width: 50%;
+}
+#header .left h3{
+  font-size: 20px;
+}
+#header .left h2{
+  font-size: 40px;
+}
+#header .left h2 span{
+  color: #4E9F3D;
+}
+#header .left  h5{
+  color: #616d6d;
+  font-size: 12px;
+}
+#header .left  button{
+  background-image: url("photos/button.png");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: -20px 29px;
+  background-color: transparent;
+  padding:2.5rem;
+}
+#header .left  button a{
+  color: #1d4a15;
+  text-decoration: none;
+  margin-top: 15px;
+}
+
+#header .right{
+  width: 43%;
+}
+#header .right img{
+  width: 100%;
+}
+
+/*styling the features section*/
+.featurs{
+  display: flex;
+  gap: 1rem;
+  padding: 15px 50px;
+}
+.featurs .card{
+  height: 15rem;
+  border-radius: 10%;
+  align-items: center;
+  box-shadow: 2px 2px 8px  rgba(17, 17, 26, 0.52);
+}
+.featurs .card:hover{
+  box-shadow: none;
+}
+.featurs .card img{
+  height: 77%;
+  margin: 5px 14px 10px;
+  width: 78%;
+}
+.featurs .card button{
+  margin-bottom: 15px;
+}
+
+/*styling products*/
+.feature-products {
+  margin-top: 40px;
+}
+.feature-products h2{
+  font-size: 40px;
+  text-align: center;
+}
+
+.feature-products h4{
+  text-align: center;
+  font-size: 20px;
+  color: #616d6d;
+}
+
+.feature-products .products{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 40px 50px;
+  gap: 1rem;
+}
+.feature-products .products .product{
+  border: 1px grey solid;
+  border-radius: 10%;
+  padding: 0.5rem 0.5rem 1rem;
+  width: 100%;
+  height: 93%;
+}
+
+.feature-products .products .product:hover{
+    cursor: pointer;
+    box-shadow: 0.4rem 0.4rem 0.8rem grey;  
+}
+
+.feature-products .products .product img{
+  width: 100%;
+  height: 72%;
+  background: rgba(171, 163, 163, 0.639);
+  border-radius: 10%;
+}
+.feature-products .products .product .info{
+  margin-top: 20px;
+  margin-left: 5px;
+}
+.feature-products .products .product .info h5{
+  font-size: 10px;
+  color: #616d6da5;
+}
+.feature-products .products .product .info .details {
+  display: flex;
+  justify-content: space-between;
+}
+.feature-products .products .product .info .details .text h3{
+  font-size: 12px;
+}
+
+.feature-products .products .product .info .details .text span{
+  font-size: 15px;
+  color: yellow;
+}
+.feature-products .products .product .info .details .text h5{
+  font-size: 15px;
+  color: green;
+}
+.feature-products .products .product .info .shop{
+  color: forestgreen;
+  border-radius: 50%;
+}
+
+/*styling the promotions section*/
+
+.promotions{
+  text-align: center;
+  color: #fff;
+  background-image: url("photos/promotions.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 70px 0;
+}
+.promotions h2 span{
+  color: blue;
+}
+.promotions button a{
+  color: #fff;
+  text-decoration: none;
+}
+.offre{
+  margin: 40px;
+}
+
+.offre .first{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+.offre .first .card{
+  color: #000;
+  padding: 2rem 2rem;
+  background-image:url("photos/card1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.offre .first .card:nth-child(2){
+  background-image:url("photos/card2.jpg");
+}
+.offre .first .card h5{
+  font-size: 15px;
+  font-weight: 200;
+}
+.offre .first .card h3{
+  font-size: 27px;
+}
+
+.offre .first .card h6{
+  font-size: 10px;
+  font-weight: 500;
+}
+.offre .first .card button{
+  width: fit-content;
+  padding: 0.6rem;
+  border: 1px solid #000;
+  background: none;
+  margin-top: 10px;
+}
+.offre .first .card button:hover{
+  background-color: #4E9F3D;
+  border:#4E9F3d 1px solid;
+}
+.offre .first .card button a{
+  color: #000;
+  text-decoration: none;
+}
+
+.offre .second{
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+.offre .second .card{
+  color: #000;
+  text-align: left;
+  padding: 3rem 1rem;
+  background-image:url("photos/card3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.offre .second .card:nth-child(2){
+  background-image: url("photos/card4.jpg");
+}
+.offre .second .card:nth-child(3){
+  background-image: url("photos/card5.jpg");
+}
+.offre .second .card h3{
+  font-size: 20px;
+}
+.offre .second .card h6{
+  font-size: 10px;
+  color: red;
+}
+/*styling the sign-up section*/
+.sign{
+  display: flex;
+  justify-content: space-between;
+  justify-content: space-between;
+  padding: 40px 50px;
+  background-image: url("/photos/email.png");
+  background-repeat: no-repeat;
+  background-size:cover;
+  align-items: center;
+  height: 20rem;
+  color: #fff;
+}
+
+.sign .text h3{
+  font-size: 20px;
+}
+.sign .text h6{
+  font-size: 14px;
+  font-weight: 350;
+}
+.sign .text h6 span{
+  color: yellow;
+}
+.sign .email{
+  display: flex;
+}
+.sign .email input{
+  padding: 0.6rem 0.2rem;
+  text-align: left;
+  width: 250px;
+  font-size: 10px;
+}
+.sign .email  button{
+  background: green;
+  padding: 5px 20px;
+  font-size: 10px;
+  color: #fff;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 15px;
+}
+
+/*styling the footer*/
+
+footer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding:40px 40px 0px;
+  gap: 2rem;
+}
+footer .contact img{
+  width: 25%;
+}
+footer .contact .active{
+  margin: 15px 0;
+}
+
+footer .contact h4{
+  font-size: 15px;
+  font-weight: 600;
+}
+footer .contact h4 span{
+  font-weight: 400;
+}
+
+footer .contact h3{
+  font-size: 18px;
+  margin: 15px 0;
+}
+
+footer .contact .social_media{
+  display: flex;
+  gap: 1rem;
+}
+footer .contact .social_media img{
+  width: 20px;
+}
+
+footer .about .active{
+  font-size: 15px;
+  font-weight: 600;
+}
+
+footer .about  h4 a{
+  font-size: 15px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 450;
+}
+footer .my-acount .active{
+  font-size: 15px;
+  font-weight: 600;
+}
+
+footer .my-acount  h4 a{
+  font-size: 15px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 450;
+}
+
+footer .install h4{
+  font-size: 15px;
+  font-weight: 600;
+}
+footer .install .active{
+  margin-bottom: 15px;
+}
+footer .install  h6{
+  font-size: 15px;
+  color: #000;
+  font-weight: 450;
+}
+footer .install  .app{
+  display: flex;
+  gap: 0.7rem;
+  margin: 10px 0;
+}
+footer .install  .app .apple,footer .install  .app .google{
+  display: flex;
+  align-items: center;
+  border: 1px solid green;
+  padding: 5px 15px;
+  gap: 0.3rem;
+}
+footer .install  .app .apple:hover,footer .install  .app .google:hover{
+  cursor: pointer;
+}
+footer .install  .app .apple img,footer .install  .app .google img{
+  width: 20%;
+}
+footer .install  .app .apple .info h6{
+  font-size: 8px;
+  margin: 0;
+}
+footer .install  .app .apple h4,footer .install  .app .google h4{
+  margin: 0;
+  font-size: 10px;
+}
+
+.copyright{
+  text-align: center;
+  margin: 20px 0;
+}
+.copyright h5{
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/*media queries for tablettes*/
+
+@media screen and (max-width:1024px){
+  nav {
+    padding: 5px 40px 2px;
+  }
+  nav .logo img{
+    width: 35%;
+  }
+  nav ul{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    padding-left: 200px;
+  }
+/*styling the features section*/
+.featurs{
+  padding: 15px 5px;
+  gap: 0.4rem;
+}
+.featurs .card{
+  height: 13rem;
+}
+.featurs .card img{
+  height: 70%;
+  margin: 5px 14px 10px;
+  width: 78%;
+}
+.featurs .card button{
+  margin-bottom: 10px;
+}
+
+.feature-products h2{
+  font-size: 35px;
+}
+
+.feature-products h4{
+  font-size: 16px;
+}
+
+.feature-products .products{
+  margin: 40px 30px;
+}
+.feature-products .products .product{
+  padding: 0.5rem 0.5rem 2rem;
+  width: 100%;
+  height: 93%;
+}
+.feature-products .products .product img{
+  height: 65%;
+}
+}
+
+/*media queries for small tablettes*/
+
+@media screen and (max-width:820px){
+  nav{
+    padding: 15px 50px 10px;
+    justify-content: space-between;
+    height: 4rem;
+  }
+  nav .logo{
+    width: 30%;
+  }
+  nav ul{
+    margin-top: 50rem;
+    height: 45rem;
+    flex-direction: column;
+    margin-left: 0px;
+    transform: translateX(20%);
+    margin-right: 0;
+    padding:  130px 150px 200px;
+    background: rgba(112, 106, 106, 0.813);
+ }
+ nav ul li a{
+  color: #fff;
+}
+nav ul li a:hover{
+  color: #000;
+  background: #4E9F3D;
+  padding: 12px;
+  border-radius: 18%;
+}
+nav ul li .active{
+color: #000;
+background: #4E9F3D;
+padding: 12px;
+border-radius: 18%;
+}
+ .close-btn{
+      display: block;
+ }
+ .close-btn .close{
+  display: none;
+ }
+ #header{
+  padding-top: 140px;
+}
+
+/*styling the features section*/
+.featurs{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  padding: 15px 50px;
+}
+.featurs .card{
+  height: 15rem;
+  border-radius: 10%;
+  align-items: center;
+  box-shadow: 2px 2px 8px  rgba(17, 17, 26, 0.52);
+}
+.feature-products .products{
+  display: grid;
+  grid-template-columns:  1fr 1fr;
+  margin: 40px 50px;
+  gap: 1rem;
+}
+
+.feature-products .products .product{
+  height: 80%;
+}
+
+.feature-products .products .product img{
+  height: 70%;
+}
+.feature-products .products .product .info{
+  margin-top: 10px;
+  margin-left: 5px;
+}
+.offre .first{
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+.offre .first .card{
+  color: #000;
+  padding: 2rem 2rem;
+  background-image:url("/photos/card1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.offre .second{
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns:  1fr;
+}
+.offre .second .card{
+  color: #000;
+  text-align: left;
+  padding: 4rem 1rem;
+  background-image:url("/photos/card3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*styling the sign-up section*/
+.sign{
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  text-align: center;
+  height: 15rem;
+}
+
+/*styling the footer*/
+
+footer{
+  display: grid;
+  grid-template-columns:  1fr 1fr;
+  align-items: center;
+  margin-left: 50px;
+  gap: 2rem;
+}
+
+}
+
+
+@media screen and (max-width:550px){
+  nav{
+    padding: 15px 20px 10px;
+    justify-content: space-between;
+  }
+  nav .logo{
+    width: 50%;
+  }  
+
+#header{
+  transform: translateY(0%);
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+#header .left{
+  width: 100%;
+}
+#header .right{
+  width: 100%;
+}
+
+/*styling the features section*/
+.featurs{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.7rem;
+  padding: 15px 15px;
+}
+
+.feature-products .products{
+  display: grid;
+  grid-template-columns:  1fr 1fr;
+  margin: 40px 20px;
+  gap: 1rem;
+}
+.feature-products .products .product{
+  height: 93%;
+}
+
+.feature-products .products .product img{
+  height: 70%;
+}
+  footer{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    gap: 2rem;
+  }
+  footer .contact .social_media a{
+    align-items: center;
+    place-items: center;
+    width: 100%;
+  }
+}
+@media screen and (max-width:400px){
+  nav .close{
+    right: 70%;
+    position: relative;
+  }
+  nav ul{
+    width: 100%;
+  }
+  nav .logo{
+    width: 50%;
+  }  
+
+  .feature-products .products{
+    grid-template-columns:  1fr 1fr;
+    margin: 40px 10px;
+    gap: 0.7rem;
+  }
+  
+.feature-products .products .product{
+  padding: 0.5rem 0.5rem 3rem;
+  width: 100%;
+  height: 100%;
+}
+}

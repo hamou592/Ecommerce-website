@@ -1,0 +1,492 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+  
+  html{
+      scroll-behavior: smooth;
+  }
+  body{
+      font-family: "Poppins",sans-serif;
+      line-height: 1.5;
+      user-select: none;
+  }
+  /*styling the nav bar*/
+  nav{
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    background:#c9c9d0c4;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    box-shadow: 6px -2px 20px 0px rgba(17, 17, 26, 0.52);
+  }
+  nav .logo img{
+    width: 28%;
+  }
+  nav ul{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    padding-left: 350px;
+ }
+ nav ul li a{
+    color: #000;
+    font-size: 13px;
+    text-decoration: none;
+}
+nav ul li a:hover{
+  color: #4E9F3D;
+  border-bottom: #4E9F3D solid 1px;
+}
+nav ul li .active{
+  color: #4E9F3D;
+  border-bottom: #4E9F3D solid 1px;
+}
+nav ul li .material-symbols-sharp{
+  font-size: 18px;
+  transform: translateY(20%);
+}
+.close-btn{
+  display: none;
+}
+/*styling the header setion */
+.header{
+    z-index: -1;
+    text-align: center;
+    height: 20rem;
+    background-image: url("photos/blog.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 8rem;
+    color: #fff;
+}
+.header h2{
+    font-size: 35px;
+}
+.header h6{
+    font-size: 15px;
+    font-weight: 300;
+}
+
+/*styling the read more section*/
+
+.read .product{
+    display: flex;
+    align-items: center;
+    margin: 50px 160px;
+}
+.read .product .left {
+    display: grid;
+}
+.read .product .left h1{
+    text-align: left;
+    font-size: 40px;
+    color: grey;
+    transform: translateY(45%);
+    z-index: -1;
+}
+
+.read .product .left img{
+    background-color: red;
+    width: 90%;
+}
+
+.read .product .right h4{
+    font-size: 30px;
+}
+.read .product .right p{
+    font-weight: 300;
+    color: grey;
+}
+.read .product .right button{
+    background: none;
+    display: flex;
+}
+.read .product .right button:hover p,.read .product .right button:hover span{
+    color: green;
+}
+.read .product .right button p{
+    font-weight: 500;
+    color: black;
+    font-size: 12px;
+}
+.read .product .right button span{
+    font-size: 18px;
+}
+
+/*styling the number button*/
+.number{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    gap: 0.4rem;
+    margin-bottom: 40px;
+    margin-left: 40%;
+}
+.number h4{
+    background: green;
+    align-items: center;
+    text-align: center;
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 15%;
+    color: #fff;
+    font-weight: 500;
+    border: green 1px solid;
+    font-size: 14px;
+
+}
+.number span{
+    color: #000;
+    height: 25px;
+    border-radius: 15%;
+    font-size: 24px;
+    border: green 1px solid;
+    transform: translateY(-10%);
+}
+.number span:hover,.number h4:hover{
+    cursor: pointer;
+    border: green 1px solid;
+    background: white;
+    color: green;
+}
+/*styling the sign-up section*/
+.sign{
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-between;
+    padding: 40px 50px;
+    background-image: url("photos/email.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    align-items: center;
+    height: 20rem;
+    color: #fff;
+  }
+  
+  .sign .text h3{
+    font-size: 20px;
+  }
+  .sign .text h6{
+    font-size: 14px;
+    font-weight: 350;
+  }
+  .sign .text h6 span{
+    color: yellow;
+  }
+  .sign .email{
+    display: flex;
+  }
+  .sign .email input{
+    padding: 0.6rem 0.2rem;
+    text-align: left;
+    width: 250px;
+    font-size: 10px;
+  }
+  .sign .email  button{
+    background: green;
+    padding: 5px 20px;
+    font-size: 10px;
+    color: #fff;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 15px;
+  }
+  
+  /*styling the footer*/
+  
+  footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding:40px 40px 0px;
+    gap: 2rem;
+  }
+  footer .contact img{
+    width: 25%;
+  }
+  footer .contact .active{
+    margin: 15px 0;
+  }
+  
+  footer .contact h4{
+    font-size: 15px;
+    font-weight: 600;
+  }
+  footer .contact h4 span{
+    font-weight: 200;
+  }
+  
+  footer .contact h3{
+    font-size: 18px;
+    margin: 15px 0;
+  }
+  
+  footer .contact .social_media{
+    display: flex;
+    gap: 1rem;
+  }
+  footer .contact .social_media img{
+    width: 20px;
+  }
+  
+  footer .about .active{
+    font-size: 15px;
+    font-weight: 600;
+  }
+  
+  footer .about  h4 a{
+    font-size: 12px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 200;
+  }
+  footer .my-acount .active{
+    font-size: 15px;
+    font-weight: 600;
+  }
+  
+  footer .my-acount  h4 a{
+    font-size: 12px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 200;
+  }
+  
+  footer .install h4{
+    font-size: 15px;
+    font-weight: 600;
+  }
+  footer .install .active{
+    margin-bottom: 15px;
+  }
+  footer .install  h6{
+    font-size: 12px;
+    color: #000;
+    font-weight: 200;
+  }
+  footer .install  .app{
+    display: flex;
+    gap: 0.7rem;
+    margin: 10px 0;
+  }
+  footer .install  .app .apple,footer .install  .app .google{
+    display: flex;
+    align-items: center;
+    border: 1px solid green;
+    padding: 5px 15px;
+    gap: 0.3rem;
+  }
+  footer .install  .app .apple:hover,footer .install  .app .google:hover{
+    cursor: pointer;
+  }
+  footer .install  .app .apple img,footer .install  .app .google img{
+    width: 20%;
+  }
+  footer .install  .app .apple .info h6{
+    font-size: 8px;
+    margin: 0;
+  }
+  footer .install  .app .apple h4,footer .install  .app .google h4{
+    margin: 0;
+    font-size: 10px;
+  }
+  
+  .copyright{
+    text-align: center;
+    margin: 20px 0;
+  }
+  .copyright h5{
+    font-size: 14px;
+    font-weight: 400;
+  }
+  
+/*media queries for tablettes*/
+
+@media screen and (max-width:1024px){
+  nav {
+    padding: 5px 40px 2px;
+  }
+  nav .logo img{
+    width: 35%;
+  }
+  nav ul{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    padding-left: 200px;
+  }
+
+  .read .product{
+    margin: 50px 80px;
+}
+}
+
+/*media queries for small tablettes*/
+
+@media screen and (max-width:820px){
+  nav{
+    padding: 15px 50px 10px;
+    justify-content: space-between;
+    height: 4rem;
+  }
+  nav .logo{
+    width: 30%;
+  }
+  nav ul{
+    margin-top: 50rem;
+    height: 45rem;
+    flex-direction: column;
+    margin-left: 0px;
+    transform: translateX(20%);
+    margin-right: 0;
+    padding:  130px 150px 200px;
+    background: rgba(112, 106, 106, 0.813);
+ }
+ nav ul li a{
+  color: #fff;
+}
+nav ul li a:hover{
+  color: #000;
+  background: #4E9F3D;
+  padding: 12px;
+  border-radius: 18%;
+}
+nav ul li .active{
+color: #000;
+background: #4E9F3D;
+padding: 12px;
+border-radius: 18%;
+}
+ .close-btn{
+      display: block;
+ }
+ .close-btn .close{
+  display: none;
+ }
+ #header{
+  padding-top: 140px;
+}
+
+.read .product{
+  display: flex;
+  align-items: center;
+  margin: 50px 60px;
+  gap: 2rem;
+}
+
+.read .product .left img{
+  width: 100%;
+}
+
+.read .product .right h4{
+  font-size: 15px;
+}
+.read .product .right p{
+  font-size: 12px;
+}
+.read .product .right button p{
+  font-weight: 500;
+  color: black;
+  font-size: 10px;
+}
+.read .product .right button span{
+  font-size: 16px;
+}
+
+/*styling the sign-up section*/
+.sign{
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  text-align: center;
+  height: 15rem;
+}
+
+/*styling the footer*/
+
+footer{
+  display: grid;
+  grid-template-columns:  1fr 1fr;
+  align-items: center;
+  margin-left: 50px;
+  gap: 2rem;
+}
+
+}
+
+
+@media screen and (max-width:550px){
+  nav{
+    padding: 15px 20px 10px;
+    justify-content: space-between;
+  }
+  nav .logo{
+    width: 50%;
+  }  
+
+#header{
+  transform: translateY(0%);
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+#header .left{
+  width: 100%;
+}
+#header .right{
+  width: 100%;
+}
+
+
+.read .product{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 50px 60px;
+  gap: 2rem;
+}
+.read .product .left h1{
+  font-size: 45px;
+}
+.read .product .right button p{
+  font-size: 10px;
+}
+.read .product .right button span{
+  font-size: 16px;
+}
+
+
+  footer{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    gap: 2rem;
+  }
+  footer .contact .social_media a{
+    align-items: center;
+    place-items: center;
+    width: 100%;
+  }
+}
+@media screen and (max-width:400px){
+  nav .close{
+    right: 70%;
+    position: relative;
+  }
+  nav ul{
+    width: 100%;
+  }
+  nav .logo{
+    width: 50%;
+  }  
+}

@@ -1,0 +1,451 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+  
+  html{
+      scroll-behavior: smooth;
+  }
+  body{
+      font-family: "Poppins",sans-serif;
+      line-height: 1.5;
+      user-select: none;
+  }
+  /*styling the nav bar*/
+  nav{
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    background:#c9c9d0;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    box-shadow: 6px -2px 20px 0px rgba(17, 17, 26, 0.52);
+  }
+  nav .logo img{
+    width: 28%;
+  }
+  nav ul{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    padding-left: 350px;
+ }
+ nav ul li a{
+    color: #000;
+    font-size: 13px;
+    text-decoration: none;
+}
+nav ul li a:hover{
+  color: #4E9F3D;
+  border-bottom: #4E9F3D solid 1px;
+}
+nav ul li .active{
+  color: #4E9F3D;
+  border-bottom: #4E9F3D solid 1px;
+}
+nav ul li .material-symbols-sharp{
+  font-size: 18px;
+  transform: translateY(20%);
+}
+.close-btn{
+  display: none;
+}
+/*styling the header setion */
+.header{
+    text-align: center;
+    height: 20rem;
+    background-image: url("photos/promotions.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 8rem;
+    color: #fff;
+    margin-bottom: 40px;
+}
+.header h2{
+    font-size: 35px;
+}
+.header h6{
+    font-size: 15px;
+    font-weight: 300;
+}
+
+/*styling the table*/
+
+table{
+  width: 95%;
+  text-align: center;
+  margin: 10px 10px 10px 25px;
+}
+table thead{
+  border-bottom: rgba(128, 128, 128, 0.521) 1px solid;
+  border-top:  rgba(128, 128, 128, 0.521) 1px solid;
+}
+table th{
+  text-transform: uppercase;/*To make the colomns uppercases*/
+}
+th,td{
+  padding: 5px;
+}
+table td:nth-child(2){
+  width: 8%;
+}
+
+table .material-symbols-sharp{
+  font-size: 14px;
+}
+table img{
+  width: 100%;
+}
+table h4{
+  font-size: 15px;
+}
+table input{
+  padding: 0.6rem 0.2rem;
+  text-align: left;
+  width: 40px;
+  font-size: 10px;
+  border: grey 1px solid;
+}
+/*styling the cart*/
+.cart{
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 50px 60px;
+    align-items: center;
+}
+
+.cart h4{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.cart .left input{
+    padding: 0.6rem 0.4rem;
+    text-align: left;
+    width: 250px;
+    font-size: 10px;
+    border: 1px solid grey;
+}
+.cart .right{
+    border: rgba(128, 128, 128, 0.489) 1px solid;
+    padding: 15px;
+}
+.cart .right table{
+    margin-bottom: 20px;
+}
+.cart .right table tr td{
+    border: #000 1px solid;
+    text-align: left;
+    padding: 0.4rem 10rem 0.4rem 0.4rem;
+}
+.cart .right table tr:nth-child(1) td,.cart .right table tr:nth-child(2) td{
+    color: grey;
+    font-weight: 300;
+}
+  /*styling the footer*/
+  
+  footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding:40px 40px 0px;
+    gap: 2rem;
+  }
+  footer .contact img{
+    width: 25%;
+  }
+  footer .contact .active{
+    margin: 15px 0;
+  }
+  
+  footer .contact h4{
+    font-size: 15px;
+    font-weight: 600;
+  }
+  footer .contact h4 span{
+    font-weight: 200;
+  }
+  
+  footer .contact h3{
+    font-size: 18px;
+    margin: 15px 0;
+  }
+  
+  footer .contact .social_media{
+    display: flex;
+    gap: 1rem;
+  }
+  footer .contact .social_media img{
+    width: 20px;
+  }
+  
+  footer .about .active{
+    font-size: 15px;
+    font-weight: 600;
+  }
+  
+  footer .about  h4 a{
+    font-size: 12px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 200;
+  }
+  footer .my-acount .active{
+    font-size: 15px;
+    font-weight: 600;
+  }
+  
+  footer .my-acount  h4 a{
+    font-size: 12px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 200;
+  }
+  
+  footer .install h4{
+    font-size: 15px;
+    font-weight: 600;
+  }
+  footer .install .active{
+    margin-bottom: 15px;
+  }
+  footer .install  h6{
+    font-size: 12px;
+    color: #000;
+    font-weight: 200;
+  }
+  footer .install  .app{
+    display: flex;
+    gap: 0.7rem;
+    margin: 10px 0;
+  }
+  footer .install  .app .apple,footer .install  .app .google{
+    display: flex;
+    align-items: center;
+    border: 1px solid green;
+    padding: 5px 15px;
+    gap: 0.3rem;
+  }
+  footer .install  .app .apple:hover,footer .install  .app .google:hover{
+    cursor: pointer;
+  }
+  footer .install  .app .apple img,footer .install  .app .google img{
+    width: 20%;
+  }
+  footer .install  .app .apple .info h6{
+    font-size: 8px;
+    margin: 0;
+  }
+  footer .install  .app .apple h4,footer .install  .app .google h4{
+    margin: 0;
+    font-size: 10px;
+  }
+  
+  .copyright{
+    text-align: center;
+    margin: 20px 0;
+  }
+  .copyright h5{
+    font-size: 14px;
+    font-weight: 400;
+  }
+  
+
+/*media queries for tablettes*/
+
+@media screen and (max-width:1024px){
+  nav {
+    padding: 5px 40px 2px;
+  }
+  nav .logo img{
+    width: 35%;
+  }
+  nav ul{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    padding-left: 200px;
+  }
+  .cart{
+      display: flex;
+      justify-content: space-between;
+      margin: 100px 20px 60px 30px;
+      align-items: center;
+  }
+  .cart .left input{
+    width: 200px;
+  }
+  .cart .right{
+    border: rgba(128, 128, 128, 0.489) 1px solid;
+    padding: 10px;
+  }
+}
+
+/*media queries for small tablettes*/
+
+@media screen and (max-width:850px){
+  nav{
+    padding: 15px 50px 10px;
+    justify-content: space-between;
+    height: 4rem;
+  }
+  nav .logo{
+    width: 30%;
+  }
+  nav ul{
+    margin-top: 50rem;
+    height: 45rem;
+    flex-direction: column;
+    margin-left: 0px;
+    transform: translateX(20%);
+    margin-right: 0;
+    padding:  130px 150px 200px;
+    background: rgba(112, 106, 106, 0.813);
+ }
+ nav ul li a{
+  color: #fff;
+}
+nav ul li a:hover{
+  color: #000;
+  background: #4E9F3D;
+  padding: 12px;
+  border-radius: 18%;
+}
+nav ul li .active{
+color: #000;
+background: #4E9F3D;
+padding: 12px;
+border-radius: 18%;
+}
+ .close-btn{
+      display: block;
+ }
+ .close-btn .close{
+  display: none;
+ }
+ #header{
+  padding-top: 140px;
+}
+
+/*styling the cart*/
+.cart{
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+}
+
+.cart h4{
+  font-size: 25px;
+}
+.cart .left input{
+  width: 350px;
+  font-size: 15px;
+}
+.cart .right{
+  padding: 10px;
+}
+/*styling the footer*/
+
+footer{
+  display: grid;
+  grid-template-columns:  1fr 1fr;
+  align-items: center;
+  margin-left: 50px;
+  gap: 2rem;
+}
+
+}
+
+
+@media screen and (max-width:580px){
+  nav{
+    padding: 15px 20px 10px;
+    justify-content: space-between;
+  }
+  nav .logo{
+    width: 50%;
+  }  
+
+#header{
+  transform: translateY(0%);
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+#header .left{
+  width: 100%;
+}
+#header .right{
+  width: 100%;
+}
+
+table{
+  width: 90%;
+}
+table thead tr th{
+  font-size: 10px;
+}
+table td:nth-child(3){
+  font-size: 10px;
+}
+table td:nth-child(2){
+  width: 5%;
+}
+table .material-symbols-sharp{
+  font-size: 10px;
+}
+table img{
+  width: 100%;
+}
+table h4{
+  font-size: 10px;
+}
+table input{
+  width: 25px;
+}
+.cart .right table tr td{
+  padding: 0.4rem 7rem 0.4rem 0.4rem;
+}
+.cart .left input{
+  width: 270px;
+}
+  footer{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    gap: 2rem;
+  }
+  footer .contact .social_media a{
+    align-items: center;
+    place-items: center;
+    width: 100%;
+  }
+}
+@media screen and (max-width:400px){
+  nav .close{
+    right: 70%;
+    position: relative;
+  }
+  nav ul{
+    width: 100%;
+  }
+  nav .logo{
+    width: 50%;
+  }  
+  .cart .right table tr td{
+    padding: 0.4rem 5rem 0.4rem 0.4rem;
+  }
+  .cart .left input{
+    width: 170px;
+    font-size: 11px;
+  }
+}

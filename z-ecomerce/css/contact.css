@@ -1,0 +1,483 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+  
+  html{
+      scroll-behavior: smooth;
+  }
+  body{
+      font-family: "Poppins",sans-serif;
+      line-height: 1.5;
+      user-select: none;
+  }
+  /*styling the nav bar*/
+  nav{
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    background:#c9c9d0e7;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    box-shadow: 6px -2px 20px 0px rgba(17, 17, 26, 0.52);
+  }
+  nav .logo img{
+    width: 28%;
+  }
+  nav ul{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    padding-left: 350px;
+ }
+ nav ul li a{
+    color: #000;
+    font-size: 13px;
+    text-decoration: none;
+}
+nav ul li a:hover{
+  color: #4E9F3D;
+  border-bottom: #4E9F3D solid 1px;
+}
+nav ul li .active{
+  color: #4E9F3D;
+  border-bottom: #4E9F3D solid 1px;
+}
+nav ul li .material-symbols-sharp{
+  font-size: 18px;
+  transform: translateY(20%);
+}
+.close-btn{
+  display: none;
+}
+/*styling the header setion */
+.header{
+    text-align: center;
+    height: 20rem;
+    background-image: url("photos/contact.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 8rem;
+    color: #fff;
+}
+.header h2{
+    font-size: 35px;
+}
+.header h6{
+    font-size: 15px;
+    font-weight: 300;
+}
+/*styling the location section*/
+.location{
+    display: flex;
+    margin: 40px 70px;
+}
+.location .left h5{
+    color: grey;
+    font-weight: 250;
+    font-size: 15px;
+}
+.location .left h2{
+    margin: 15px 0;
+}
+.location .left h4{
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.location .left .same{
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+.location .left .same span{
+    font-size: 15px;
+}
+/*styling the card section*/
+.contactt{
+    display: flex;
+   justify-content: space-between;
+    margin: 40px 50px;
+    align-items: center;
+}
+.contactt .left{
+    width: 60%;
+}
+.contactt .left h5 { 
+    color: grey;
+    font-weight: 250;
+    font-size: 15px;
+}
+.contactt .left form{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+.contactt .left form input,.contactt .left form textarea{
+    border:grey 1px solid;
+    padding: 0.4rem;
+}
+.contactt .left form textarea{
+    height: 10rem;
+}
+.contactt .left form  button{
+    width: fit-content;
+}
+
+
+.contactt .right .person{
+    display: flex;
+    gap: 1rem;
+}
+.contactt .right .person img{
+    border-radius: 50%;
+    width: 15%;
+    height: 20%;
+}
+.contactt .right .person .info h3{
+    font-size: 15px;
+    margin-bottom: 0;
+}
+.contactt .right .person .info p{
+    color: grey;
+    font-weight: 250;
+    font-size: 15px;
+}
+/*styling the sign-up section*/
+.sign{
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-between;
+    padding: 40px 50px;
+    background-image: url("photos/email.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    align-items: center;
+    height: 20rem;
+    color: #fff;
+  }
+  
+  .sign .text h3{
+    font-size: 20px;
+  }
+  .sign .text h6{
+    font-size: 14px;
+    font-weight: 350;
+  }
+  .sign .text h6 span{
+    color: yellow;
+  }
+  .sign .email{
+    display: flex;
+  }
+  .sign .email input{
+    padding: 0.6rem 0.2rem;
+    text-align: left;
+    width: 250px;
+    font-size: 10px;
+  }
+  .sign .email  button{
+    background: green;
+    padding: 5px 20px;
+    font-size: 10px;
+    color: #fff;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 15px;
+  }
+  
+  /*styling the footer*/
+  
+  footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding:40px 40px 0px;
+    gap: 2rem;
+  }
+  footer .contact img{
+    width: 25%;
+  }
+  footer .contact .active{
+    margin: 15px 0;
+  }
+  
+  footer .contact h4{
+    font-size: 15px;
+    font-weight: 600;
+  }
+  footer .contact h4 span{
+    font-weight: 200;
+  }
+  
+  footer .contact h3{
+    font-size: 18px;
+    margin: 15px 0;
+  }
+  
+  footer .contact .social_media{
+    display: flex;
+    gap: 1rem;
+  }
+  footer .contact .social_media img{
+    width: 20px;
+  }
+  
+  footer .about .active{
+    font-size: 15px;
+    font-weight: 600;
+  }
+  
+  footer .about  h4 a{
+    font-size: 12px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 200;
+  }
+  footer .my-acount .active{
+    font-size: 15px;
+    font-weight: 600;
+  }
+  
+  footer .my-acount  h4 a{
+    font-size: 12px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 200;
+  }
+  
+  footer .install h4{
+    font-size: 15px;
+    font-weight: 600;
+  }
+  footer .install .active{
+    margin-bottom: 15px;
+  }
+  footer .install  h6{
+    font-size: 12px;
+    color: #000;
+    font-weight: 200;
+  }
+  footer .install  .app{
+    display: flex;
+    gap: 0.7rem;
+    margin: 10px 0;
+  }
+  footer .install  .app .apple,footer .install  .app .google{
+    display: flex;
+    align-items: center;
+    border: 1px solid green;
+    padding: 5px 15px;
+    gap: 0.3rem;
+  }
+  footer .install  .app .apple:hover,footer .install  .app .google:hover{
+    cursor: pointer;
+  }
+  footer .install  .app .apple img,footer .install  .app .google img{
+    width: 20%;
+  }
+  footer .install  .app .apple .info h6{
+    font-size: 8px;
+    margin: 0;
+  }
+  footer .install  .app .apple h4,footer .install  .app .google h4{
+    margin: 0;
+    font-size: 10px;
+  }
+  
+  .copyright{
+    text-align: center;
+    margin: 20px 0;
+  }
+  .copyright h5{
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  /*media queries for tablettes*/
+  
+  @media screen and (max-width:1024px){
+    nav {
+      padding: 5px 40px 2px;
+    }
+    nav .logo img{
+      width: 35%;
+    }
+    nav ul{
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+      padding-left: 200px;
+    }
+    .location{
+      margin: 40px 40px;
+  }
+  
+/*styling the card section*/
+.contactt{
+  margin: 40px 20px;
+  gap: 3rem;
+}
+.contactt .left{
+  width: 58%;
+}
+  }
+  
+  /*media queries for small tablettes*/
+  
+  @media screen and (max-width:820px){
+    nav{
+      padding: 15px 50px 10px;
+      justify-content: space-between;
+      height: 4rem;
+    }
+    nav .logo{
+      width: 30%;
+    }
+    nav ul{
+      margin-top: 50rem;
+      height: 45rem;
+      flex-direction: column;
+      margin-left: 0px;
+      transform: translateX(20%);
+      margin-right: 0;
+      padding:  130px 150px 200px;
+      background: rgba(112, 106, 106, 0.813);
+   }
+   nav ul li a{
+    color: #fff;
+  }
+  nav ul li a:hover{
+    color: #000;
+    background: #4E9F3D;
+    padding: 12px;
+    border-radius: 18%;
+  }
+  nav ul li .active{
+  color: #000;
+  background: #4E9F3D;
+  padding: 12px;
+  border-radius: 18%;
+  }
+   .close-btn{
+        display: block;
+   }
+   .close-btn .close{
+    display: none;
+   }
+   #header{
+    padding-top: 140px;
+  }
+  
+/*styling the location section*/
+.location{
+  flex-direction: column;
+  margin: 40px 20px;
+  text-align: center;
+  gap: 1rem;
+}
+
+.location .left .same{
+  display: grid;
+  align-items: center;
+  align-items: center;
+}
+.location iframe{
+  width: 100%;
+}
+  /*styling the sign-up section*/
+  .sign{
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+    height: 15rem;
+  }
+  
+  /*styling the footer*/
+  
+  footer{
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    align-items: center;
+    margin-left: 50px;
+    gap: 2rem;
+  }
+  
+  }
+  
+  
+  @media screen and (max-width:550px){
+    nav{
+      padding: 15px 20px 10px;
+      justify-content: space-between;
+    }
+    nav .logo{
+      width: 50%;
+    }  
+  
+  #header{
+    transform: translateY(0%);
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  
+  #header .left{
+    width: 100%;
+  }
+  #header .right{
+    width: 100%;
+  }
+  
+/*styling the card section*/
+.contactt{
+  display: flex;
+  flex-direction: column;
+  margin: 40px 20px;
+  text-align: center;
+}
+.contactt .left{
+  width: 100%;
+}
+.contactt .right{
+  width: 100%;
+  gap: 2rem;
+}
+.contactt .right .person{
+  flex-direction: column;
+  align-items: center;
+}
+    footer{
+      display: grid;
+      grid-template-columns: 1fr;
+      align-items: center;
+      text-align: center;
+      margin: 0;
+      gap: 2rem;
+    }
+    footer .contact .social_media a{
+      align-items: center;
+      place-items: center;
+      width: 100%;
+    }
+  }
+  @media screen and (max-width:400px){
+    nav .close{
+      right: 70%;
+      position: relative;
+    }
+    nav ul{
+      width: 100%;
+    }
+    nav .logo{
+      width: 50%;
+    }  
+  
+  }
