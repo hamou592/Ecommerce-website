@@ -1,1 +1,8 @@
 # Ecommerce-website
+This is an ecommerce  website created using html css javascript which is full responsive for all devices (mobile-desktop-tablettes) ,this website has 6 pages and every page has 3 section : navbar(this contain a  logo of the website and a menu which every element goes us to a specific page ) ,content (dependent to the page),footer (this has a logo of the website , permalinks ,the social media acounts to contacts us and to download our mobile app,also it has copyrights content):
+1.Home : it has :descriptiion section,our offers,our products,promotions offer,new products section,exclusive offers,section to send a newslatter.
+2.SHOP : it has : All products that we have on the store and if you click on a product you will see more details (a picture of a product,price,how much is the number that  you want to  buy, a description of this product and you can change the product ) , at the top you can go back to see all products by clicking to the button, this page has also a section to send a newslatter.
+3.BLOG : it hasa readmore section about our services and a section to send a newslatter  .
+4.ABOUT: it has part to describe who we are with some text-animation and a video which is autoplayed to show you our mobile application also a link to download it,then the page has our offers and a section to send a newslatter.
+5.CONTACT : it has our phone number and email to contact us,our work time, our location in map to find us,then it has a form to send us a message ,our managers,lastly it has a section to send us a newslatter.
+6.CARD : it has a part for buying our products and know the total to pay with a visa or master card.
